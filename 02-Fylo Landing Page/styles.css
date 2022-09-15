@@ -19,6 +19,10 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
 }
+img {
+    width: 100%;
+    object-fit: cover;
+}
 
 /* ===============Navbar================ */
 
@@ -28,11 +32,15 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
+}
+.logo img {
+    width: 80%;
 }
 .nav-list ul {
     display: flex;
     gap: 3rem;
+    font-family: "Raleway", sans-serif;
 }
 
 .nav-list ul li {
@@ -42,8 +50,61 @@ nav .container {
     text-decoration: none;
     color: var(--desaturated-blue);
     font-size: 1.1rem;
+    transition: all 400ms ease;
 }
 .nav-list ul a:hover {
-    color: hsl(238, 23%, 31%);
+    color: hsl(238, 29%, 18%);
+    cursor: pointer;
+}
+
+/* ===============Main=================== */
+main {
+    font-family: "Raleway", sans-serif;
+}
+main .container {
+    width: 90%;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+.info {
+    width: 80%;
+}
+.info h3 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    line-height: 1.4;
+    color: var(--very-dark-blue);
+}
+.info p {
+    margin-top: 0.7rem;
+    line-height: 1.3;
+    color: var(--very-dark-blue);
+}
+.info form {
+    margin-top: 0.7rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.info form input {
+    padding: 0.4rem 1.2rem;
+    outline: none;
+    width: 50%;
+}
+.info form button {
+    background: var(--bright-blue);
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    padding: 0.4rem 1.2rem;
+    width: 35%;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    transition: all 400ms ease;
+}
+.info form button:hover {
+    background: hsl(224, 69%, 41%);
     cursor: pointer;
 }
