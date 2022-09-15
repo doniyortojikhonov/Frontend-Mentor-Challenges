@@ -5,9 +5,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: "Open Sans", sans-serif;
+}
+
+/* ===============Navbar================ */
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.nav-list ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-list ul li {
+    list-style: none;
+}
+.nav-list ul a {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-size: 1.1rem;
+}
+.nav-list ul a:hover {
+    color: hsl(238, 23%, 31%);
+    cursor: pointer;
 }
