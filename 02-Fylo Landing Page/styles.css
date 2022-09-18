@@ -240,3 +240,45 @@ main .container {
 .banner-form button:hover {
     background: hsl(224, 71%, 38%);
 }
+
+/* ================Footer Section ========================= */
+footer {
+    background: var(--very-dark-blue);
+}
+
+footer .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+footer a {
+    text-decoration: none;
+    color: var(--very-dark-blue);
+    color: #fff;
+    transition: all 400ms ease;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 0.6rem;
+}
+footer li a:hover {
+    color: rgb(196, 181, 181);
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contacts i {
+    padding-right: 0.6rem;
+}
+.socials ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
